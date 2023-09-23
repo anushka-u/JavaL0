@@ -24,7 +24,7 @@ public class QuickRevision {
 		for (int i = 0; i < n; i++) {
 			System.out.println(Arr[i]);
 		}
-
+		bReader.close();
 	}
 
 

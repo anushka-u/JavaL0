@@ -30,6 +30,8 @@ public class MinimumAndMaximumInArray {
 
 		System.out.println("Minimum in array is " + Minimum);
 		System.out.println("Maximum in array is " + Maximum);
+		scanner.close();
 	}
+	
 
 }

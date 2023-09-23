@@ -20,6 +20,7 @@ public class PairsWithGivenSum {
 				}
 			}
 		}
+		scanner.close();
 	}
 
 }

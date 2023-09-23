@@ -24,6 +24,7 @@ public class ReverseAnArray {
 		for (int a : arr) {
 			System.out.println(a);
 		}
+		scanner.close();
 	}
 
 }

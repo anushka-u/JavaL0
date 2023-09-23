@@ -11,7 +11,7 @@ public class StringBufferDemo {
 		sBuffer.append(", let's go and have some drink.");
 		System.out.println(sBuffer);
 
-		sBuffer.getChars(0, 7, sBuffer.length(), 1);
+		sBuffer.getChars(0, 7, sBuffer, 1);
 		System.out.println(sBuffer);
 
 	}

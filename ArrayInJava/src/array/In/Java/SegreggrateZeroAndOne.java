@@ -26,6 +26,7 @@ public class SegreggrateZeroAndOne {
 		for (int a : arr) {
 			System.out.printf(a + " ");
 		}
+		
 	}
 
 }
