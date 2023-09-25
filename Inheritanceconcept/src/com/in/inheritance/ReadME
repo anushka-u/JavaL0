@@ -31,3 +31,39 @@ It will not execute parameterized Constructor
 
 To let is execute parameterized constructor we need to use super() in child class
 
+
+Object class is default super class in Java
+
+
+Inheritance types -
+Single Inheritance
+Multi-level Inheritance
+Hybrid Inheritance
+Hierarchical Inheritance
+
+class A -> class B [Single Inheritance]
+
+
+[Hierarchical Inheritance]
+					class A
+			/			|    	 \
+		class B     Class C    Class D
+		
+		
+[Multi-level Inheritance]
+
+Class A
+	^
+	|
+Class B
+	^
+	|
+Class C
+
+[Hybrid Inheritance]
+If our class have a super class then our class doesn't extends default super class directly but will have indirect super class
+Example We have 2 class User and Employee
+User inherits Object class by default 
+and Employee inherits User class as direct Parent directly and will have Object(default class) as indirect Parent
+
+
