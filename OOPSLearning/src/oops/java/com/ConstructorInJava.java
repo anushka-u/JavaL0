@@ -6,7 +6,7 @@ public class ConstructorInJava {
 	int age;
 	String Name;
 	String College;
-	
+	// Writing more than one constructor with different parameter is known as Constructor Overloading
 	//Parameterized Constructor
 	public ConstructorInJava(int id,int age,String Name,String College)
 	{
