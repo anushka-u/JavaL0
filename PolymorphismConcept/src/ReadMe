@@ -66,6 +66,10 @@ int add(int a, int b)
  	}
  }
  
+ #  Object class .equals() method compares address of object
+ String Class .equals() method compare content of object
+ 
+ 
   
  
  
