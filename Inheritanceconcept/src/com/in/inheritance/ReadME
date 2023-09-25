@@ -1,0 +1,33 @@
+# Parent class cannot access properties and method present inside child class
+# In example InheritanceTemplate is Parent and TEst is child class
+# Inheritance gives Child class access to the variable and method present inside the cparent class
+# We use "extends" keyword to inherit a class into another
+# Java doesn't support multiple inheritance but does support multi level inheritance
+# To overcome the lack of multiple inheritance in java we do have interface
+# When we create object for child class, Parent class Constructor will be called first automatically that is default nature of java
+# ParentClass Constructor => Child Class Constructor.{Priority ->}
+# Parent class Constructor is being called when we create child object is because parent properties should initialize first so that child can access the parent
+#
+class Parent{
+
+public Parent()
+{
+}
+
+public Parent(int id, int age)
+{
+S.O.P("Parameterized Constructor");
+}
+}
+
+class Child{
+}
+
+Child cd = new Child(8,14); // Will give error.
+
+
+Whenever we create an object of child class the zero param constructor of Parent class will be executed 
+It will not execute parameterized Constructor
+
+To let is execute parameterized constructor we need to use super() in child class
+
