@@ -1,0 +1,73 @@
+Polymorphism -> If any object is exhibiting multiple behaviour based on the situation then it is called as Polymorphism
+Poly -> Many
+Phism -> Forms
+=======================================================================
+Polymorphism is of two types -
+1-- Static Polymorphism [Compile time polymorphism]
+Ex - Overloading
+-- Overloading can be supported by both method and constructor
+
+2-- Dynamic Polymorphism [ Run time polymorphism]
+ex Overriding
+--Overriding can only be supported by method
+=================================================
+
+Method Overloading
+The process of writing more than one method with same name and different parameters are known as method 
+overloading
+
+Writing more than one constructor with different parameter is known as Co0nstructor
+overloading
+
+
+Example: [Method Overloading]
+Overloading always belong to same class, so both method to be called should be inside same class,
+if methods will be in two different class it will not be method overloading.
+
+int add(int a, int b)
+{
+	return a+b;
+}
+ 
+ int add(int a, int b,int c)
+ {
+ 	return a+b+c;
+ }
+ 
+ We do overloading because we have two method performing same operation but 
+ with different parameter, we do use same name because it is doing same operation
+ and to maintain readability we do this
+ 
+ It is compile time polymorphism because it is upto compiler to decide which method to call
+ at compile time
+ ================================================
+ Method Overriding ---
+  
+  When we define same method in parent class and also in child class then that method is known as 
+  method overriding
+  Writing same method in both parent and child class with same name and same parameters
+  are known as overriding.
+  
+  We go with overriding when we don't want to execute parent class implementation then we can
+  write our own implementation using overriding.
+  
+  class Parent
+  {
+  	void m1()
+  	{
+  		S.O.P("Method of Parent class");
+  	}
+  }
+  
+ class Child extends Parent{
+ 	void m1()
+ 	{
+ 		S.O.P("MEthod of parent class overridden in child class");
+ 	}
+ }
+ 
+  
+ 
+ 
+ 
+ 
