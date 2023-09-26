@@ -87,4 +87,42 @@ Lambda Expression is used for functional programming.
 ===========================================================
 If you don't want to implement all method of interface then our class should be defined as abstract class.
 
+=> One interface cannot implement another interface but it can extends another interface
+
+=> In interface we can declare variables also, by default they are public static final.
+It is not mandatory to use abstract keyword while defining a method in 
+interface because compiler will make the defined method in interface as abstract by default.
+
+=====================================================================================================================================
+
+
+|===============================|
+|	     Abstract class		    |
+|===============================|
+
+-> The class which contains both abstract and concrete method is known as Abstract class
+-> We will used  'abstract' keyword to represent class as abstract class
+-> To write abstract method  'abstract' keyword is mandatory in abstract class.
+
+ Abstract class contains constructor but still object for abstract classes cannot be created
+// To create an object of abstract class, a subclass is required which does implement the abstract class.
+
+
+When we extend properties for abstract class then it is mandatory for the class to override the method
+the abstract method of abstract class.
+
+We cannot use abstract and final in one method
+
+public abstract final void m1(); // Invalid
+Final means cannot be modifies and implemented in short don't override.
+Abstract means overriding
+
+Abstract class constructor will be executed when we create an object for sub class of abstract class
+
+
+
+		
+
+
+
 

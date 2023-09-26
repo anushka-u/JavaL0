@@ -1,0 +1,35 @@
+Blocks in Java
+=================
+
+Block means some part or some piece of information or some piece of code
+
+There are two type of Blocks-
+Instance Block
+Static Block
+
+==============|
+Instance Block|
+==============|
+
+If you want to execute some piece of code when object is created then we will go
+for instance block
+
+{
+	//stmts
+}
+
+===============|
+Static Block   |
+===============|
+
+If we want to execute some piece of code when class is loaded then we can go with 
+static block
+
+syntx:
+{
+ 	//stmts
+ 	
+ }
+ 
+ =======================================================================================
+ 
