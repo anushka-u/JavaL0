@@ -44,14 +44,47 @@ We use interface keyword to create an interface.
 whenever we write a method in interface then by default that method is abstract method
 Interface doesn't contain constructor, we cannot create the object for interface.
 
-To implemtnt a interface we will use implement keyword
+To implement a interface we will use implement keyword
 
 Implementation of method can be changed from one class to another class but method shouldn't be changed.
 
 Interface will use to decide the rules and the classes implementing
 Interface will be follow those all rules
 
+We cannot write a main method inside interface because interface should only contain abstract method and main is a concrete method.
 
+We can call interface as a method parameter.
+Interface reference variable can hold it's implementation class object
+
+When method is taking interface as parameter that means that method is taking interface implementation class
+object as a parameter
+
+When method is having interface as a return type then that means that method will return interface implementation
+object as a return type
 ========================================================
-A class can extend only one method but implements several methods.
+A class can extend only one class but can implements several interfaces.
+
+Classes are tightly coupled
+
+-> If interface doesn't contain any method then that interface is called as "Marker Interface"
+-> Marker Interface is nothing but  Identity Interface.
+-> Example of MArker Interface are Cloneable, Serializable ... etc
+ 
+ -> if our class implements pre-defined interface then JVM will treat our classes as
+ special classes and it will provide special functionality based on the marker interfaces we have 
+ implemented.
+
+->We can create and use our own marker interface but there is no use of it because
+JVM only identifies Pre-defined marker interface and doesn't know about our defined marker interface.
+
+
+-> Functional Interface
+==> The interface which contains only one method is called as functional interfaces
+Functional interface are introduced to called "Lambda Expressions"
+
+Lambda Expression is used for functional programming.
+
+===========================================================
+If you don't want to implement all method of interface then our class should be defined as abstract class.
+
 
