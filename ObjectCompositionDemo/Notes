@@ -1,0 +1,52 @@
+In Java Classes we can have two types of relation--
+# Is-A Relation -> Inheritance
+# Has-A Relation -> Composition
+================================================================
+			USer
+	/		 | 			\
+Student	  Person    Employeee
+
+Student is-a user
+Person is-a user
+Employee is a user
+
+All three are inheriting properties of User class.
+PArent -child relation, gives us code reusability so
+it's a is-a relation.
+If we want to use all of properties and method then go with is-a
+relation
+=================================================================
+CAR ->Has-A->  Engine
+When we want to use some selected properties and method 
+inside another class then go with has-a relation.
+We can achieve Has-A relation by object composition.
+
+How to achieve composition
+Class Engine
+{	int id;
+	String NameOfEngine;
+
+    
+	void start()
+	{
+		S.O.P("Engine Starting");
+	}
+}
+
+class Car
+{
+   P.s.v.m(String... args)
+ {
+   
+	void drive{
+		
+		engine e = new Engine();
+		e.start();
+		S.O.P("Journey has started");
+	}
+  }
+}
+
+
+
+

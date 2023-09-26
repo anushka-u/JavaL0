@@ -1,0 +1,16 @@
+-> final is a reserved keyword in Java
+-> We can use final for 
+ #Class
+ # Variable
+ # Method
+ If we declare a class as a final then our class will become
+ immutable
+ 
+ Ex - String Class.
+ 
+ For Final classes inheritance isn't possible
+ final variable value cannot be modified as it is nothing
+ but constant
+ Final methods cannot be overridden
+ 
+ 
