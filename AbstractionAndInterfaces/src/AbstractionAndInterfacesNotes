@@ -1,0 +1,57 @@
+====================
+ABSTRACTION
+=====================
+
+-> The process of hiding un-necessary data and providing
+only useful data is called as abstraction
+-> We can achieve abstraction using interfaces & abstract class
+
+In java we can write two types of method -
+1 - Concrete Method
+2 - Abstract Method
+
+The method which contain the body is called as Concrete method
+Ex
+public void m1()
+{
+	//logic
+}
+or 
+public void m1() // this is also concrete as it's not have abstract keyword at front
+{
+}
+
+The method which does not contain the body is called as Abstract Method
+Ex -
+public abstract void m2();
+
+Note -- By using abstract keyword we can create abstract method and abstract classes.
+================================
+Interfaces
+===============
+
+Interfaces are used to achieve loosely coupling
+It is use to hide un-necessary data and provide useful data.
+
+if one class is directly dependent on another class that is known as tightly coupling
+To avoid tightly coupling we use Interface
+Interfaces contains abstract method (Statement true till Java 1.7)
+
+Once interfaces is created then anybody can provide implementation of interface\
+
+We use interface keyword to create an interface.
+
+whenever we write a method in interface then by default that method is abstract method
+Interface doesn't contain constructor, we cannot create the object for interface.
+
+To implemtnt a interface we will use implement keyword
+
+Implementation of method can be changed from one class to another class but method shouldn't be changed.
+
+Interface will use to decide the rules and the classes implementing
+Interface will be follow those all rules
+
+
+========================================================
+A class can extend only one method but implements several methods.
+
