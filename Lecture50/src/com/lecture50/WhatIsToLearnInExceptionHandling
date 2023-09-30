@@ -153,11 +153,26 @@ because as per kind of exception the code will be executed.
 finally block---
 
 -> It is used to perform resource cleanup activity
+-> finally block will execute always
+
+try - finally - Valid
+try - catch - finally - Valid
+catch - finally - invalid
+only finally - Invalid	
+
+	
+=======================================================================
+
+What is difference between final, finally and finalize?
+
+-> Final : It is a keyword which is used to declare the final variables, final methods and final class
+finalize() - It is a predefined method available in object class and it will be called by garbage collector before
+removing object from heap area	
+finally -> The finally block in java is used to put important codes such as clean up code e.g. closing the file or 
+closing the connection. The finally block executes whether exception rise or not and whether exception handled or not.
 
 
-		
-		
 
-
+Nested try blocks are valid - we can write one try block within a try or catch block.
 
 
