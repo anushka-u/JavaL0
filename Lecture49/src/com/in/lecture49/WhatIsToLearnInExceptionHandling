@@ -1,0 +1,115 @@
+====================
+Exception Handling
+====================
+What is exception?
+Why to handle exception
+Types of exception
+Exception vs Error
+Exception hierarchy
+Checked Exceptions
+Un checked Exceptions
+Exception Handling keywords
+		try
+		catch
+		throw
+		throws
+		finally
+Exception Propogation
+Try with Resources
+User Defined Exception
+
+
+Graceful Termination : Termination after executing program successfully.
+Abnormal Termination: Termination in middle of execution.
+
+What is Exception?
+-> Exception is unwanted and unexpected situation in the program execution
+-> Exception will disturb normal flow of the program execution
+-> When exception occur Program will be terminated abnormally
+-> To achieve graceful termination we need to handle the exceptions occurred while Program execution
+
+The Process of handling exceptions is known as Exception handling
+The main aim of Exception handling is to achieve graceful termination of program
+
+
+What is Exception Hierarchy
+-> In java we have many pre defined exceptions
+Ex ArithmaticException
+NullPointerException
+FileNotFoundException
+SQLException
+
+Exception Hierarchy
+==========
+
+1> Object
+ 	|
+2> Throwable is further categorised in two part
+
+a> 1.1Exceptions - this can be handled
+		1.1.1 Checked Exceptions
+		1.1.2 UnChecked Exceptions
+b> 1.2Error - cannot be handled
+
+What is the difference between Exception and Error?
+Exception can be handled Error can't be
+
+exceptions are divided into two types-
+a> checked Exception - will occur at compile time
+	Ex- filenotfound
+	SQLException 
+	IOException etc ..........
+	
+b> Unchecked Exception - will occur at run time
+	nullpointerException
+	ArithmaticException etc ................
+	
+=================================================
+Java Provided five keywords to handle Exception
+		try
+		catch
+		throw
+		throws
+		finally
+		
+try
+=====
+-> it is used to keep risky code
+-> we cannot write only try block, we need to write it with either catch block or finally block or both
+syntax
+	try
+	{
+		//stmts
+	}
+	catch
+	{
+		//logic
+	}
+
+try - catch.......--> valid combination
+try -finally -----> valid
+try - catch -fianlly ----> valid
+try ---> invalid
+
+
+catch
+=============
+-> catch block is used to catch the execution which occurred in try block
+-> To write catch block, try block is mandatory
+
+syntax
+try
+{	
+	//logic
+}
+catch(Exception e)
+{
+	//logic
+}
+
+IF there will be error in try block then only catch block will execute
+
+
+
+
+

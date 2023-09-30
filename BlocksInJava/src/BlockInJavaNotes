@@ -18,6 +18,8 @@ for instance block
 	//stmts
 }
 
+
+Instance block does have high priority than constructor
 ===============|
 Static Block   |
 ===============|
@@ -25,11 +27,92 @@ Static Block   |
 If we want to execute some piece of code when class is loaded then we can go with 
 static block
 
-syntx:
-{
+syntax:
+static{
  	//stmts
  	
  }
  
+ Static block will dominate the main method, it will have high priority than main() method
  =======================================================================================
+ 
+ Que: What is static control flow and what is instance control flow?
+ 
+ Ans -> When we run java program JVM will check for below static member and will allocate memory for them
+ a) static variables
+ b) static methods
+ c) static block
+ 
+ -> Once memory allocation completed for static member then it will static execution in below order
+ a) static block
+ b) static method (if we call) (only main method will execute automatically)
+ c) static variable
+ 
+ If java program will run then static block will be executed before main method.
+ upto java 1.6 Java Program was able to execute using static block but from java v1.7 they have 
+ made main() mandatory to run java program.
+ 
+ Instance variable cannot be written in static block directly, if  we want access for instance variable
+ or instance method in static are then we should create object and using that object we can access , we cannot access directlt
+ 
+ We can access static variable in static method directly.
+ 
+ 
+ Que: What is Instance Control flow in Java?
+ 
+ Ans-> Instance Control flow will begin when the object is created, when object is created memory will be allocated for instance variable
+ instance method and instance block
+ 
+ Once memory allocation will be completed then execution will happen in below order
+ a)instance block
+ b) Constructor
+ c) instance method (if we call)
+ 
+ Note -> Static members can be access directly in instance areas because for static members memory will be already
+ allocated at the time of class loading.
+ 
+ ===================================================================================================================================================
+ 
+ java.lang.Object Class =
+ 
+ ->Object is a pre-defined class available in java.lang.package
+ -> Object class will act as super class for all classes in java either directly or indirectly
+ 
+ Object class does have 11 methods, those methods are by default available for every java object
+ 
+ Demo d = new Demo();
+ d.equal();
+ d.toString();
+ d.hashCode();
+ 
+ The process of creating a duplicate object is known as cloning.
+ Protected Object Clone() 
+ boolean equals(object obj)
+ protected void finalize()
+ Class <?> getClass()
+ int hashCode()
+ 
+ 
+ String toString() 
+ -> used to return the object in string format
+ When we print any object or when we call toString method it will call toString method by default.
+ 
+ Object Class toString Method implementation---
+ 
+ public String toString()
+ {	
+ 	return this.getClass().getName() + "@" + Integer.toHexString(this.hashCode());
+ }
+ 
+ 
+ These five we will learn in multi-threading--
+ notify()
+ notifyAll()
+ wait() 
+ void wait (long timeout)
+ void wait(long timeout, int nanos)
+ 
+ 
+ 
+ 
  

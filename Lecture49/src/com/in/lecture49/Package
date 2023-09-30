@@ -1,0 +1,30 @@
+===============
+Packages
+===============
+
+Packages are used to group the classes and interfaces,exceptions and errors.
+In java class package statement should be in first line.
+In java language, so many classes & interfaces are already available
+Ex: String, StringBuffer, StringBuilder, Arrays, BufferedReader, Scanner etc....
+
+-> Some people divided predefined classes and interfaces into several packages
+1> java.lang
+2> java.io
+3> java.util
+4> java.sql
+
+-> java.lang package is default package and it is available for all java classes by default
+-> If we want to use any other class which is not part of java.lang then we will have to import that class.
+
+==========================================
+USER Defined Packages
+============================================
+
+-> In our project we will create our own packages to organise project related classes and interfaces.
+-> to create a package we will use package keyword
+  ex package com.tcs.aadhar;
+  sample package name : companyname.projectNAme.moduleNAme
+  
+ 
+Note: In project we can create 2 classes with same name in 2 different packages.
+ 

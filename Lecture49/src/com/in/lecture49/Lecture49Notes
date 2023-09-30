@@ -1,0 +1,40 @@
+Super 
+=========
+-> super keyword is used to access parent class properties (can be a variable, method or constructor)
+-> It is used to access direct parent property
+
+this keyword is used to refer current class property
+
+Keywords========
+1> class
+2> extends
+3> interface
+4> implements
+5> new 
+6> this 
+7> super - used to represent parent class properties
+8> final
+9> public
+10> private
+11> Protected
+12> abstract
+13> static
+14> void
+15> return
+16> break
+17> continue
+18> if
+19> else
+20> switch
+21> case
+22>for
+23> do
+24> while
+25> byte
+26>short
+27>int
+28> long
+29> double
+30> boolean
+31> float
+32> char
