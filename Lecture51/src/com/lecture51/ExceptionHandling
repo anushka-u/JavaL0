@@ -1,0 +1,53 @@
+throws -> It is used to handover checked exception to caller method/JVM
+Throws are used to ignore checked exception.
+
+Note: If you want to ignore all checked exception by using throws Exception
+Note 2: We can ignore all checked exception using throws keyword.
+
+
+throw -> It is used to throw the exception wantedly/Programatically.
+throw is used to create the exception
+
+
+Errors are OutOfMemoryError
+StackOverflowError
+
+
+Object is parent class of Throwable
+Throwable is parent class of Exception
+1.1Exception is parent class of Checked Exception and Unchecked Exception
+
+
+1.2 Throwable is parent class of Error
+
+=============================================
+User Defined Exceptions--
+-> In java we have several predefined exception
+IOException
+FileNotFoundException
+SqlException
+ClassNotFoundException
+ArithmeticException
+ArrayNegativeSizeException
+etcetra
+
+-> Based on the project requirement when we need to create our own exception then that is called as UserDefined Exception
+Ex : InvalidCredentialsException
+UserNotFoundException
+or many more
+
+-> To create our own Exception we need to extend the properties from Exception Class or RunTimeException class
+JSE API
+-> java.lang
+->Go to Exception
+-> Open RunTimeException
+java.lang.object
+	java.lang.Throwable
+		java.lang.Exeption
+			java.lang.RunTimeException
+			
+
+
+
+
+

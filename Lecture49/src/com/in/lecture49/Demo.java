@@ -12,7 +12,7 @@ public class Demo {
 		String str = bufferedReader.readLine();
 		
 		System.out.println(str);
-
+		bufferedReader.close();
 	}
 
 }

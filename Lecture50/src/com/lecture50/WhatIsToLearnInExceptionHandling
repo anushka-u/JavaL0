@@ -109,6 +109,54 @@ catch(Exception e)
 
 IF there will be error in try block then only catch block will execute
 
+==========================================================
+We can write one try block with multpile catch block.
+The best approach  to write catch block is to go with Exception e
+bcoz it will handle all kind of exception whether that exception is due to null pointer or Arithmetic Exception etcetra.
+===================================================================
+
+		try {
+			System.out.println("Try MEthod started");
+			String s = null;
+			System.out.println(s.length()); // will throw nullpointerException
+			System.out.println("Try Method Ended");
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			System.out.println("Got Exception in trying so Catch method started and ended");
+		}catch(ArithmeticException exp)
+		{
+			e.printStackTree();
+		}
+		
+In above scenario we will be getting compile time error
+because of unreachable second catch block, the reason it it unreachable is because 
+Exception e will be handling all kind of scenario beforehand itself.
+
+======================================================================
+
+-> try
+{
+}
+catch (NullPointerException e)
+{
+}
+catch (ArithmeticException ex)
+{
+}
+
+above one is valid because we can write one try block with multiple catch block
+because as per kind of exception the code will be executed.
+
+===============================================================================
+
+finally block---
+
+-> It is used to perform resource cleanup activity
+
+
+		
+		
 
 
 
