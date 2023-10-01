@@ -1,0 +1,67 @@
+Static Import
+=================
+Static import is used to access static members directly without using class name.
+
+To call static method of s class inside a package and we are importing that package
+into another package then to call static methods you need to use class name
+
+Normal import
+import com.ibm.aadhar.person;
+
+->Person.speak()
+person.m1()
+person.m2()
+
+To overcome calling the method without class name you can use static import
+
+import static ibm.aadhar.person.Person;
+
+speak()
+m1();
+m2();
+
+====================================================================================
+Variable Arguments::
+Unlimited argument for a single method
+Syntax
+------
+<access_specifier> <return_type> <Method_Name>(<datatype>... varName)
+
+public int add(int... a)
+
+->Ellipses (only 3 ellipses are allowed)
+-> when we don't know how many parameters to take for a method then variable argument should be allowed
+-> Variable Argument concept is introduced in Java 1.5 version
+-> Variable argument will be the last argument in a method.
+-> A method should contain only one variable argument
+
+
+=============================================================================
+Wrapper Classes:
+
+-> for every data type there is a wrapper classes available in Java
+-> To represent everything in form of Object Java has provided Wrapper classes
+->In java we can represent everything in for of object
+-> Wrapper class represent primitive type in Object format
+-> All wrapper classes are part of java.lang package
+
+ DataType - WrapperClass
+-> byte	 -  Byte
+->short --> Short
+->int 	--> Integer
+->long 	---> Long
+->float ---> Float
+->double ---> Double
+->char -->  Character
+->boolean ----> Boolean
+
+
+Boxing: The process of Converting Primitive type into Wrappper Object is known as Boxing
+UnBoxing : The Process of converting wrapper object into primitive type ic called as UnBoxing
+
+
+We are only telling and JVM is working boxing and unboxing
+From java 1.5 boxing and unboxing process automated so it is called as auto boxing and auto unboxing.
+
+
+Every wrapper class has two constructor except character, one take 
