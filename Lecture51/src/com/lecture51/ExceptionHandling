@@ -49,5 +49,10 @@ java.lang.object
 
 
 
+============================================================
+
+Exception Propogation: When our method isn't interested in handling exception then we will rethrow the exception
+-> Rethrowing the exception is known as Exception Propogation.
+
 
 
