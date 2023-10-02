@@ -1,0 +1,46 @@
+TYPE CASTING
+==================
+Converting from one data type to another data type is knows as Type Casting
+Type casting is dividied into two typws
+1) Widening / UpCasting
+2) Narrowing / downCasting
+
+byte b =20;
+int i = b; //widening
+
+The process of storing lower data type to higher datatype is known as Widening or UPCasting
+We don't need to do explicit casting while doing widening
+Ex byte b = 67;
+int i =b; //Widening
+
+The process of storing higher data type  into lower data type is known as NArrowing or downcasting
+We do need to do explicit casting 
+The data could be loss in case of Narrowing
+long l = 3456;
+int i = (int)l; //Narrowing
+
+
+===============================================================
+-> String type data can be converted into Integer by using Integer.parseInt(xx) method
+-> parseInt() is a static method available in Integer Wrapper Class.
+
+String s= "h1";
+int i = Integer.parseInt(s) ; // Will be getting Unchecked Exception NumberFormatException
+---------------------
+.parseDouble
+.parseShort
+.parseFloat  etcetra methods are there
+------------------------------------------
+
+Type Casting w.r.t to Referece Type:
+
+-> Parent object can be converted to child class.
+-> Cloneable - Marker Interface
+
+
+
+
+
+
+
+
