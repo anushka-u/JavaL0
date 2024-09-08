@@ -16,9 +16,11 @@ public class RemoveVowels {
 			}
 			s2 += ch[i];
 		}
+//		System.out.println(Reverse("Anushka",""));
 
-		System.out.println("String after removing vowel is " + s2);
+		//System.out.println("String after removing vowel is " + s2);
 
 	}
+
 
 }
