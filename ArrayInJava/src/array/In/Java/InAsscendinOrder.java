@@ -29,7 +29,7 @@ public class InAsscendinOrder {
 		}
 
 		System.out.println();
-		System.out.println("In Descending Order");
+		System.out.println("In Descending com.FunctionalProgramming.Order");
 		for (int i = 0; i < n; i++) {
 			for (int j = i + 1; j < n; j++) {
 				if (arr[i] < arr[j]) {
